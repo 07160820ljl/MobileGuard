@@ -26,6 +26,5 @@ public class SplashActivity extends AppCompatActivity {
                 versionUpdateUtils.getCloudVersion();
             }
         }.start();
-        System.out.println("a");
     }
 }
