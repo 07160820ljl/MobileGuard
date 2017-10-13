@@ -40,7 +40,6 @@ public class HomeActivity extends AppCompatActivity {
                 switch (position){
                     case 0: //点击手机防盗
                         if(isSetUpPassword()){
-                            System.out.println("OK!");
                             //弹出输入密码对话框
                             showInterPwdDialog();
                         }else{
