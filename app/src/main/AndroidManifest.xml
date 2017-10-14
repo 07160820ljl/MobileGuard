@@ -20,6 +20,16 @@
         </activity>
         <activity android:name=".m1home.HomeActivity">
         </activity>
+        <activity android:name=".m2theftguard.LostFindActivity">
+        </activity>
+        <activity android:name=".m2theftguard.Setup1Activity">
+        </activity>
+        <activity android:name=".m2theftguard.Setup2Activity">
+        </activity>
+        <activity android:name=".m2theftguard.Setup3Activity">
+        </activity>
+        <activity android:name=".m2theftguard.Setup4Activity">
+        </activity>
     </application>
 
 </manifest>

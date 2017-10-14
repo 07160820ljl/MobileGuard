@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:gravity="center">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/rb_first"
+            android:button="@null"
+            android:background="@drawable/circle_purple_bg_selector"/>
+        <RadioButton
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/rb_second"
+        android:button="@null"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/circle_purple_bg_selector"/>
+        <RadioButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/rb_third"
+            android:button="@null"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/circle_purple_bg_selector"/>
+        <RadioButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/rb_four"
+            android:button="@null"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/circle_purple_bg_selector"/>
+
+    </RadioGroup>
+
+</LinearLayout>
