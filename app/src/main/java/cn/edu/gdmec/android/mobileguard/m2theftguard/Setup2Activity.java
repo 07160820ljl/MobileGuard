@@ -70,7 +70,7 @@ public class Setup2Activity extends BaseSetUpActivity implements View.OnClickLis
         if(!isBind()){
             String simSerialNumber = mTelephonyManager.getSimSerialNumber();
             SharedPreferences.Editor edit = sp.edit();
-            edit.putString("SIM",simSerialNumber);
+            edit.putString("sim",simSerialNumber);
             edit.commit();
             Toast.makeText(this,"SIM卡绑定成功！",Toast.LENGTH_LONG).show();
             mBindSIMBtn.setEnabled(false);
