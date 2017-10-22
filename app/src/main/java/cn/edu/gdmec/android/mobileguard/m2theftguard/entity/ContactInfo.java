@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import cn.edu.gdmec.android.mobileguard.R;
 
-public class ContactInfo extends AppCompatActivity {
+public class ContactInfo{
     public String id;
     public String name;
     public String phone;
