@@ -34,10 +34,11 @@
         android:layout_height="50dp">
         <TextView
             style="@style/textview16sp"
+            android:id="@+id/tv_lostfind_protectstauts"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:text="防盗保护开启"
+            android:text="防盗保护是否开启"
             android:textColor="@color/purple"/>
         <ToggleButton
             android:layout_width="70dp"
