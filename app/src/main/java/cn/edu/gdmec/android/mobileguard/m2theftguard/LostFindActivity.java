@@ -14,6 +14,7 @@ import android.widget.ToggleButton;
 
 import org.w3c.dom.Text;
 
+
 import cn.edu.gdmec.android.mobileguard.R;
 
 public class LostFindActivity extends AppCompatActivity implements View.OnClickListener {
@@ -51,7 +52,7 @@ public class LostFindActivity extends AppCompatActivity implements View.OnClickL
         if (protecting) {
             mProtectStatusTV.setText("防盗保护已经开启");
             mToggleButton.setChecked(true);
-        }else{
+        } else {
             mProtectStatusTV.setText("防盗保护没有开启");
             mToggleButton.setChecked(false);
         }
@@ -72,7 +73,6 @@ public class LostFindActivity extends AppCompatActivity implements View.OnClickL
     }
 
 
-
     private boolean isSetUp() {
         return msharedPreferences.getBoolean("isSetUp", false);
     }
@@ -82,9 +82,10 @@ public class LostFindActivity extends AppCompatActivity implements View.OnClickL
         startActivity(intent);
         finish();
     }
+
     @Override
-    public void onClick(View view){
-        switch(view.getId()){
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.rl_inter_setup_wizard:
                 startSetUp1Activity();
                 break;
@@ -94,3 +95,4 @@ public class LostFindActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 }
+
