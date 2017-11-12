@@ -30,6 +30,18 @@
         android:paddingLeft="5dp"
         android:textColor="@color/bright_purple"
         android:textSize="16sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_blacktype"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/coner_white_rec"
+        android:hint="请输入黑名单类型"
+        android:paddingLeft="5dp"
+        android:textColor="@color/bright_purple"
+        android:textSize="16sp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

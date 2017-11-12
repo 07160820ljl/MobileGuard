@@ -33,7 +33,7 @@ public class SecurityPhoneActivity extends AppCompatActivity implements View.OnC
 
     private void fillData(){
         dao = new BlackNumberDao(SecurityPhoneActivity.this);
-        totalNumber = dao.getTotaNumber();
+        totalNumber = dao.getTotalNumber();
         if(totalNumber == 0){
             mHaveBlackNumber.setVisibility(View.GONE);
             mNoBlackNumber.setVisibility(View.VISIBLE);
@@ -86,7 +86,6 @@ public class SecurityPhoneActivity extends AppCompatActivity implements View.OnC
                             }else{
                                 pageBlackNumber.addAll(dao.getPageBlackNumber(pagenumber,pagesize));
                                 adapter.notifyDataSetChanged();
-                                adapter.notifyDataSetChanged();
                             }
                         }
                         break;
@@ -125,7 +124,7 @@ public class SecurityPhoneActivity extends AppCompatActivity implements View.OnC
     @Override
     protected void onResume() {
         super.onResume();
-        if(dao.getTotaNumber() > 0){
+        if(dao.getTotalNumber() > 0){
             mHaveBlackNumber.setVisibility(View.VISIBLE);
             mNoBlackNumber.setVisibility(View.GONE);
         }else{

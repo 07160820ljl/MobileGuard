@@ -29,5 +29,21 @@
         <item name="android:gravity">center_vertical</item>
 
     </style>
+    <!-- 软件管家模块用到的 2017.11.06 -->
+    <style name="zero_widthwrapcontent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="tvyellow14sp" parent="zero_widthwrapcontent">
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bright_yellow</item>
+    </style>
+    <style name="textview12sp" parent="zero_widthwrapcontent">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 
 </resources>

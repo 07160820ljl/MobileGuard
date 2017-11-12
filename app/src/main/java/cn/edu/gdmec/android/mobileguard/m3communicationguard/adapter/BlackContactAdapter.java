@@ -26,6 +26,7 @@ public class BlackContactAdapter extends BaseAdapter {
     class ViewHolder{
         TextView mNameTV;
         TextView mModeTV;
+        TextView mTypeTV;
         View mContacImgv;
         View mDeleteView;
     }
@@ -65,6 +66,7 @@ public class BlackContactAdapter extends BaseAdapter {
             holder = new ViewHolder();
             holder.mNameTV = (TextView)view.findViewById(R.id.tv_black_name);
             holder.mModeTV = (TextView)view.findViewById(R.id.tv_black_mode);
+            holder.mTypeTV = (TextView)view.findViewById(R.id.tv_black_type);
             holder.mContacImgv = view.findViewById(R.id.view_black_icon);
             holder.mDeleteView = view.findViewById(R.id.view_black_delete);
             view.setTag(holder);
@@ -73,18 +75,20 @@ public class BlackContactAdapter extends BaseAdapter {
         }
         holder.mNameTV.setText(contactInfos.get(i).contactName+"("+contactInfos.get(i).phoneNumber+")");
         holder.mModeTV.setText(contactInfos.get(i).getModeString(contactInfos.get(i).mode));
+        holder.mTypeTV.setText(contactInfos.get(i).blackType);
         holder.mNameTV.setTextColor(context.getResources().getColor(R.color.bright_purple));
         holder.mModeTV.setTextColor(context.getResources().getColor(R.color.bright_purple));
+        holder.mTypeTV.setTextColor(context.getResources().getColor(R.color.bright_purple));
         holder.mContacImgv.setBackgroundResource(R.drawable.brightpurple_contact_icon);
         holder.mDeleteView.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                boolean detele = dao.detele(contactInfos.get(i));
+                boolean detele = dao.delete(contactInfos.get(i));
                 if (detele) {
                     contactInfos.remove(contactInfos.get(i));
                     BlackContactAdapter.this.notifyDataSetChanged();
-                    if (dao.getTotaNumber() == 0) {
+                    if (dao.getTotalNumber() == 0) {
                         callBack.DataSizeChanged();
                     }
                     } else {
