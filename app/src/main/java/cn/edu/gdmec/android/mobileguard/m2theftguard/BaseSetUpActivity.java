@@ -51,7 +51,8 @@ public abstract class BaseSetUpActivity extends AppCompatActivity {
                 }
                 if((e1.getRawX()-e2.getRawX())>200){
                     showNext();
-                    overridePendingTransition(R.anim.next_in,R.anim.next_out);
+//                    overridePendingTransition(R.anim.next_in,R.anim.next_out);
+                    overridePendingTransition(R.anim.zoomin,R.anim.zoomout);
                     return true;
                 }
                 return super.onFling(e1, e2, velocityX, velocityY);
