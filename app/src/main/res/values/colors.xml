@@ -14,4 +14,11 @@
     <color name="graye5">#E5E5E5</color>
     <color name="bright_yellow">#FEC425</color>
     <color name="transparent">#00000000</color>
+
+    <!--手机杀毒模块用到的-->
+    <color name="dark_gray">#ff999999</color>
+    <color name="bright_red">#F22723</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#2684DC</color>
+    <color name="light_blue">#1671CE</color>
 </resources>

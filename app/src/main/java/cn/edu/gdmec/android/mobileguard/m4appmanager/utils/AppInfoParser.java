@@ -1,6 +1,7 @@
 package cn.edu.gdmec.android.mobileguard.m4appmanager.utils;
 
 import android.content.Context;
+
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -12,9 +13,12 @@ import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
+
+import java.util.Arrays;
 import java.util.List;
 
 import cn.edu.gdmec.android.mobileguard.m4appmanager.entity.AppInfo;
+
 
 /**
  * Created by as on 2017/11/6.
@@ -152,6 +156,13 @@ public class AppInfoParser {
                         appinfo.appPermissions = appinfo.appPermissions + pio + "\n";
                     }
                 }
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                packInfo = pm.getPackageInfo(packname, PackageManager.GET_ACTIVITIES);
+                Arrays.toString(packInfo.activities);
             } catch (PackageManager.NameNotFoundException e) {
                 e.printStackTrace();
             }

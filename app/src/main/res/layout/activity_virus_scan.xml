@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar"/>
+
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/virusscan_icon"/>
+        <TextView
+            android:id="@+id/tv_lastscantime"
+            style="@style/textview16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/rl_allscanvirus">
+        <ImageView
+            android:id="@+id/imgv_quickscan"
+            style="@style/wrapcontent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/quickscan_icon"/>
+        <TextView
+            android:id="@+id/tv_allscan"
+            style="@style/textview16sp"
+            android:layout_toRightOf="@+id/imgv_quickscan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="全盘扫描"/>
+        <TextView
+            android:layout_below="@+id/tv_allscan"
+            style="@style/textview14sp"
+            android:layout_toRightOf="@+id/imgv_quickscan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="全面扫描手机，杀毒更彻底"/>
+        <View
+            android:layout_width="13dp"
+            android:layout_height="20dp"
+            android:background="@drawable/rightarrow_blue"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@color/black30"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
