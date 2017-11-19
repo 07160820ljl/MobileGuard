@@ -160,12 +160,6 @@ public class AppInfoParser {
                 e.printStackTrace();
             }
 
-            try {
-                packInfo = pm.getPackageInfo(packname, PackageManager.GET_ACTIVITIES);
-                Arrays.toString(packInfo.activities);
-            } catch (PackageManager.NameNotFoundException e) {
-                e.printStackTrace();
-            }
 
             appinfos.add(appinfo);
             appinfo = null;

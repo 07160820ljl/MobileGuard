@@ -13,6 +13,7 @@
             android:id="@+id/tv_scanprocess"
             style="@style/wrapcontent"
             android:textColor="@color/white"
+            android:layout_centerInParent="true"
             android:textSize="38sp"
             android:textStyle="bold"/>
         <LinearLayout

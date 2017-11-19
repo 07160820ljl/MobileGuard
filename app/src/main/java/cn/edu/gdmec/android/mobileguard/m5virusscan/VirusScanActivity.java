@@ -24,7 +24,7 @@ public class VirusScanActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_virus_scan);
         mSP = getSharedPreferences("config", MODE_PRIVATE);
-        copyDB("anticirus.db");
+        copyDB("antivirus.db");
         initView();
     }
 
@@ -37,7 +37,7 @@ public class VirusScanActivity extends AppCompatActivity implements View.OnClick
 
     private void copyDB(final String dbname) {
         new Thread() {
-            public void runn() {
+            public void run() {
                 try {
                     File file = new File(getFilesDir(), dbname);
                     if (file.exists() && file.length() > 0) {

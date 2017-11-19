@@ -33,7 +33,7 @@ public class AppInfo {
     public String certificateIssuer;
     /** 权限申请信息 */
     public String appPermissions;
-    public String[] activity;
+    public String[] activities;
 
     /** 拿到App位置字符串 */
     public String getAppLocation(boolean isInRoom){
