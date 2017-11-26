@@ -25,8 +25,7 @@
             android:layout_marginLeft="10dp"
             android:maxLength="26"
             android:singleLine="true"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white"/>
         <TextView
             android:id="@+id/tv_can_clean"
             style="@style/textview12sp"
@@ -35,7 +34,8 @@
             android:layout_marginBottom="10dp"
             android:layout_marginRight="10dp"
             android:maxLength="20"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/imgv_broom"/>
 
     </RelativeLayout>
     <ListView
