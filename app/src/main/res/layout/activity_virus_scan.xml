@@ -62,6 +62,44 @@
             android:background="@color/black30"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/rl_cloudscanvirus">
+        <ImageView
+            android:id="@+id/imgv_cloudscan"
+            style="@style/wrapcontent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/quickscan_icon"/>
+        <TextView
+            android:id="@+id/tv_cloudscan"
+            style="@style/textview16sp"
+            android:layout_toRightOf="@+id/imgv_cloudscan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="云查杀"/>
+        <TextView
+            android:layout_below="@+id/tv_cloudscan"
+            style="@style/textview14sp"
+            android:layout_toRightOf="@+id/imgv_cloudscan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="云查杀，杀毒更全面"/>
+        <View
+            android:layout_width="13dp"
+            android:layout_height="20dp"
+            android:background="@drawable/rightarrow_blue"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@color/black30"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 
 
 </LinearLayout>
