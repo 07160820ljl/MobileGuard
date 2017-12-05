@@ -69,7 +69,7 @@ public class TrafficMonitoringActivity extends AppCompatActivity implements View
         mCorrectFlowBtn.setOnClickListener(this);
         mTotalTV = (TextView) findViewById(R.id.tv_month_totalgprs);
         mUsedTV = (TextView) findViewById(R.id.tv_month_usedgprs);
-        mToDayTV = (TextView) findViewById(R.id.tv_traffic_remind);
+        mToDayTV = (TextView) findViewById(R.id.tv_today_gprs);
         mRemindIMGV = (ImageView) findViewById(R.id.imgv_traffic_remind);
         mRemindTV = (TextView) findViewById(R.id.tv_traffic_remind);
     }
