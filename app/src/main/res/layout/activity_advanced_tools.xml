@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.edu.gdmec.android.mobileguard.m9advancedtools.AdvancedToolsActivity">
+    <include layout="@layout/titlebar"/>
+    <cn.edu.gdmec.android.mobileguard.m9advancedtools.widget.AdvancedToolsView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/advanceview_numbelongs"
+        app:desc = "号码归属地查询"
+        android:gravity="center_vertical"
+        android:src="@drawable/numofbelongto"/>
+    <cn.edu.gdmec.android.mobileguard.m9advancedtools.widget.AdvancedToolsView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/advanceview_smsbackup"
+        app:desc = "短信备份"
+        android:gravity="center_vertical"
+        android:src="@drawable/sms_backup"/>
+    <cn.edu.gdmec.android.mobileguard.m9advancedtools.widget.AdvancedToolsView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/advanceview_smsreducition"
+        app:desc = "短信还原"
+        android:gravity="center_vertical"
+        android:src="@drawable/sms_reduction"/>
+    <cn.edu.gdmec.android.mobileguard.m9advancedtools.widget.AdvancedToolsView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/advanceview_applock"
+        app:desc = "程序锁"
+        android:gravity="center_vertical"
+        android:src="@drawable/programoflock"/>
+</LinearLayout>
