@@ -55,12 +55,12 @@ public class VirusScanActivity extends AppCompatActivity implements View.OnClick
                 mVersion = dao.getVirusVersion();
                 mDbVersionTV = (TextView) findViewById(R.id.tv_lastscantime);
                 mDbVersionTV.setText("病毒数据库版本:" + mVersion);
-                UpdateDb(mVersion);
+                /*UpdateDb(mVersion);*/
             }
             super.handleMessage(msg);
         }
     };
-    VersionUpdateUtils.DownloadCallback downloadCallback = new VersionUpdateUtils.DownloadCallback() {
+   /* VersionUpdateUtils.DownloadCallback downloadCallback = new VersionUpdateUtils.DownloadCallback() {
         @Override
         public void afterDownload(String filename) {
             copyDB("antivirus.db", Environment.getExternalStoragePublicDirectory("/download/").getPath());
@@ -74,7 +74,7 @@ public class VirusScanActivity extends AppCompatActivity implements View.OnClick
                 versionUpdateUtils.getCloudVersion("http://android2017.duapp.com/virusupdateinfo.html");
             }
         }.start();
-    }
+    }*/
     private void copyDB(final String dbname,final String fromPath) {
         new Thread (  ){
             public void run(){

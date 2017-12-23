@@ -59,7 +59,7 @@ public class AppUnLockFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_app_lock,null);
+        View view = inflater.inflate(R.layout.fragment_app_un_lock,null);
         mUnLockTV = (TextView) view.findViewById(R.id.tv_unlock);
         mUnLockLV = (ListView) view.findViewById(R.id.lv_unlock);
         return view;

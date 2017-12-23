@@ -17,7 +17,7 @@ import cn.edu.gdmec.android.mobileguard.m1home.utils.VersionUpdateUtils;
  */
 
 public class VersionEntity {
-    public String versioncode;
+    public String versionCode;
     public String description;
     public String apkurl;
 }
