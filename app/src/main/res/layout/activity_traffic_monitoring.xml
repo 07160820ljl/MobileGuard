@@ -7,6 +7,7 @@
     <include layout="@layout/titlebar"/>
     <LinearLayout
         android:orientation="vertical"
+        android:layout_weight="10"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <RelativeLayout
@@ -57,12 +58,13 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <Button
         android:id="@+id/btn_correction_flow"
         android:layout_width="280dp"
         android:layout_height="78dp"
-        android:gravity="center_horizontal"
         android:layout_marginBottom="10dp"
         android:layout_weight="4"
-        android:background="@drawable/correction_flow_btn_selector"/>
+        android:background="@drawable/correction_flow_btn_selector"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
